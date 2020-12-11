@@ -1,0 +1,19 @@
+.plan-table-button {
+  max-width: 300px;
+  height: 64px;
+  color: #FFf;
+  width: 90%;
+  font-size: 1.5rem;
+  border: none;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+  &-free {
+    background-color: #979797;  
+  }
+  &-monthly-silver {
+    background-color: #4AC959;
+  }
+  &-monthly-platinum {
+    background-color: #000000;
+  }
+}

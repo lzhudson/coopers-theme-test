@@ -1,0 +1,9 @@
+body {
+  background: url(../images/BG.svg) no-repeat;
+  background-position-x: 100%;
+  background-position-y: 25px;
+
+  @media (max-width: 768px) {
+    background: none;
+  }
+}

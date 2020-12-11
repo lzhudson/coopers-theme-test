@@ -1,0 +1,67 @@
+footer {
+  background: $footer-bg;
+  display: flex;
+  justify-content: center;
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .sales-center-text {
+      font-size: 1.5rem;
+      color: #FFF;
+      
+      font-weight: 600;
+      margin-bottom: $margin-bottom-size;
+      margin-top: 2.5rem;
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1rem;
+      }
+    }
+    .sales-center-whatsapp {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin-bottom: $margin-bottom-size;
+      &:hover {
+        @include hover-link
+      }
+      img {
+        margin-right: 1.5rem;
+        @media (max-width: $breakpoint-mobile) {
+          width: 30px;
+        }
+      }
+      span {
+        
+        font-size: 2.5rem;
+        color: #FFF;
+        font-weight: 600;
+        @media (max-width: $breakpoint-mobile) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .sales-center-email {
+      margin-bottom: $margin-bottom-size;
+      
+      color: #FFF;
+      font-weight: 600;
+      text-decoration: none;
+      &:hover {
+        @include hover-link
+      }
+      @media (max-width: $breakpoint-mobile) {
+        font-size: 1rem;
+      }
+    }
+    .copyright-text {
+      font-size: 0.8rem;
+      color: #FFF;
+      
+      margin-bottom: $margin-bottom-size;
+      font-weight: 400;
+    }
+  }
+}
+

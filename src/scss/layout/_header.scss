@@ -1,0 +1,50 @@
+header {
+  border-top: 24px solid $primary-border-color;
+  &.container {
+    @media (min-width: 1500px) {
+      max-width: 100%;
+    }
+  }
+}
+.nav {
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 1500px) {
+    max-width: calc(1280px + 160px);
+    margin: 0 auto;
+    padding: 2.5rem 80px;
+  }
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+  }
+  &-menu {
+    list-style: none;
+    
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    &-item {
+      &-link {
+        text-decoration: none;
+        color: #000;
+      } 
+      &-button {
+        text-decoration: none;
+        color: #FFF;
+        background: #000;
+        width: 120px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+        @media (max-width: 320px) {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  
+}
